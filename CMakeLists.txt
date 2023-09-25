@@ -154,3 +154,19 @@ if(JSON_VALIDATOR_INSTALL)
             ${INSTALL_CMAKE_DIR}
         )
 endif()
+
+set(CPACK_PACKAGE_NAME "json_schema_validator")
+set(CPACK_PACKAGE_VERSION "1063c9a")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "JSON schema validator for JSON for Modern C++")
+
+set(CPACK_GENERATOR "DEB")
+
+set(CPACK_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}-Linux-x86_64.tgz")
+
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
+
+set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Jose Rafael <jose.rafael@synkar.com>")
+
+set (CPACK_DEBIAN_PACKAGE_DEPENDS "nlohmann_json (= 3.11.2)")
+
+include(CPack)
