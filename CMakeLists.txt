@@ -157,7 +157,7 @@ if(JSON_VALIDATOR_INSTALL)
 endif()
 
 set(CPACK_PACKAGE_NAME "json_schema_validator")
-set(CPACK_PACKAGE_VERSION "1063c9a")
+set(CPACK_PACKAGE_VERSION "2.2.0")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "JSON schema validator for JSON for Modern C++")
 
 set(CPACK_GENERATOR "DEB")
